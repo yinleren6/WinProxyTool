@@ -5,16 +5,17 @@ using System.Windows.Forms;
 
 namespace WinProxyTool
 {
-    public partial class Form1 : Form
+    public partial class MainWindow : Form
     {
         readonly string version = "1.1.1 ";
         int ProxyEnable;
         string ProxyServer;
         bool ignore_local;
 
-        public Form1()
+        public MainWindow()
         {
             InitializeComponent();
+            this.CheckBox_Override.Text = "(重写父类)本地(intranet)地址不使用代理";
             UpdateValue();
             label_versiom.Text = version;
         }
