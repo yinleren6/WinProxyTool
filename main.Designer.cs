@@ -217,9 +217,9 @@
             this.label_versiom.Font = new System.Drawing.Font("宋体", 12F);
             this.label_versiom.Location = new System.Drawing.Point(22, 36);
             this.label_versiom.Name = "label_versiom";
-            this.label_versiom.Size = new System.Drawing.Size(61, 22);
+            this.label_versiom.Size = new System.Drawing.Size(71, 22);
             this.label_versiom.TabIndex = 1;
-            this.label_versiom.Text = "version";
+            this.label_versiom.Text = "[version]";
             // 
             // linkLabel1
             // 
