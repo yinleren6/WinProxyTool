@@ -81,7 +81,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(120, 35);
             this.button1.TabIndex = 7;
-            this.button1.Text = "switch";
+            this.button1.Text = "[STATU]";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.Button_Enable_Proxy_Click);
             // 
@@ -233,14 +233,14 @@
             this.linkLabel1.Text = "Github";
             this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Jump);
             // 
-            // Form1
+            // MainWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(456, 366);
             this.Controls.Add(this.tabControl1);
             this.MinimumSize = new System.Drawing.Size(472, 405);
-            this.Name = "Form1";
+            this.Name = "MainWindow";
             this.Text = "系统代理设置";
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);

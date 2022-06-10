@@ -7,7 +7,7 @@ namespace WinProxyTool
 {
     public partial class MainWindow : Form
     {
-        readonly string version = "1.1.1 ";
+        readonly string version = "1.1.2 ";
         int ProxyEnable;
         string ProxyServer;
         bool ignore_local;
@@ -15,8 +15,8 @@ namespace WinProxyTool
         public MainWindow()
         {
             InitializeComponent();
-            this.CheckBox_Override.Text = "(重写父类)本地(intranet)地址不使用代理";
-            UpdateValue();
+            this.CheckBox_Override.Text = "本地(intranet)地址不使用代理";
+            UpdateValue(); UpdateUI();
             label_versiom.Text = version;
         }
         //内部类
@@ -60,7 +60,6 @@ namespace WinProxyTool
             //跳过代理
             string mProxyOverride = Settings.Get_ProxyOverride();
             ignore_local = mProxyOverride.Contains("<local>");
-            UpdateUI();
         }
 
         //更新UI
@@ -126,17 +125,17 @@ namespace WinProxyTool
         }
 
         //刷新按钮
-        private void Button_get_Proxy_Click(object sender, EventArgs e) { UpdateValue(); }
+        private void Button_get_Proxy_Click(object sender, EventArgs e) { UpdateValue(); UpdateUI(); }
 
         //保存代理按钮
-        private void Button_Save_Proxy_Click(object sender, EventArgs e) { Save_ProxyServer(); Save_ProxyOverride(); }
+        private void Button_Save_Proxy_Click(object sender, EventArgs e) { Save_ProxyServer(); Save_ProxyOverride(); UpdateValue(); UpdateUI(); }
 
         //代理开关按钮
         private void Button_Enable_Proxy_Click(object sender, EventArgs e)
         {
             if (ProxyEnable == 1) { Set_ProxyEnable(0); }
             else { Set_ProxyEnable(1); }
-            UpdateValue();
+            UpdateValue(); UpdateUI();
         }
 
         private void Jump(object sender, LinkLabelLinkClickedEventArgs e) { Process.Start("https://github.com/yinleren6/WinRegTool/releases"); }
