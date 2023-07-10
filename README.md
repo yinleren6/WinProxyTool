@@ -1,6 +1,6 @@
 # WinProxyTool
 
-**此项目将迁移到 [WinProxyTool_WPF](https://github.com/yinleren6/WinProxyTool_WPF)**
+**另一个更好看的版本 [WinProxyTool_WPF](https://github.com/yinleren6/WinProxyTool_WPF)**
 
 ___
 

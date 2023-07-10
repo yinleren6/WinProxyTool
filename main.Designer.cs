@@ -38,7 +38,6 @@
             this.label_IP = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.CheckBox_Override = new System.Windows.Forms.CheckBox();
             this.log = new System.Windows.Forms.RichTextBox();
             this.flowLayoutPanel3 = new System.Windows.Forms.FlowLayoutPanel();
             this.flowLayoutPanel2 = new System.Windows.Forms.FlowLayoutPanel();
@@ -58,17 +57,19 @@
             this.panel1.Controls.Add(this.button_refresh);
             this.panel1.Controls.Add(this.button1);
             this.panel1.Controls.Add(this.button_config);
-            this.panel1.Location = new System.Drawing.Point(23, 257);
+            this.panel1.Location = new System.Drawing.Point(20, 181);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(384, 41);
+            this.panel1.Size = new System.Drawing.Size(329, 29);
             this.panel1.TabIndex = 2;
             // 
             // button_refresh
             // 
             this.button_refresh.Font = new System.Drawing.Font("宋体", 14F);
-            this.button_refresh.Location = new System.Drawing.Point(3, 3);
+            this.button_refresh.Location = new System.Drawing.Point(3, 2);
+            this.button_refresh.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_refresh.Name = "button_refresh";
-            this.button_refresh.Size = new System.Drawing.Size(120, 35);
+            this.button_refresh.Size = new System.Drawing.Size(103, 25);
             this.button_refresh.TabIndex = 5;
             this.button_refresh.Text = "刷新";
             this.button_refresh.UseVisualStyleBackColor = true;
@@ -77,9 +78,10 @@
             // button1
             // 
             this.button1.Font = new System.Drawing.Font("宋体", 14F);
-            this.button1.Location = new System.Drawing.Point(132, 3);
+            this.button1.Location = new System.Drawing.Point(113, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(120, 35);
+            this.button1.Size = new System.Drawing.Size(103, 25);
             this.button1.TabIndex = 7;
             this.button1.Text = "[STATU]";
             this.button1.UseVisualStyleBackColor = true;
@@ -88,9 +90,10 @@
             // button_config
             // 
             this.button_config.Font = new System.Drawing.Font("宋体", 14F);
-            this.button_config.Location = new System.Drawing.Point(261, 3);
+            this.button_config.Location = new System.Drawing.Point(224, 2);
+            this.button_config.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button_config.Name = "button_config";
-            this.button_config.Size = new System.Drawing.Size(120, 35);
+            this.button_config.Size = new System.Drawing.Size(103, 25);
             this.button_config.TabIndex = 6;
             this.button_config.Text = "保存";
             this.button_config.UseVisualStyleBackColor = true;
@@ -102,25 +105,27 @@
             this.label_Port.Font = new System.Drawing.Font("宋体", 14F);
             this.label_Port.Location = new System.Drawing.Point(3, 0);
             this.label_Port.Name = "label_Port";
-            this.label_Port.Size = new System.Drawing.Size(50, 26);
+            this.label_Port.Size = new System.Drawing.Size(47, 19);
             this.label_Port.TabIndex = 4;
             this.label_Port.Text = "端口";
             // 
             // textBox_Port
             // 
             this.textBox_Port.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox_Port.Location = new System.Drawing.Point(3, 29);
+            this.textBox_Port.Location = new System.Drawing.Point(3, 21);
+            this.textBox_Port.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_Port.Name = "textBox_Port";
-            this.textBox_Port.Size = new System.Drawing.Size(200, 34);
+            this.textBox_Port.Size = new System.Drawing.Size(172, 29);
             this.textBox_Port.TabIndex = 3;
             this.textBox_Port.TextChanged += new System.EventHandler(this.TextBox_Port_TextChanged);
             // 
             // textBox_IP
             // 
             this.textBox_IP.Font = new System.Drawing.Font("宋体", 14F);
-            this.textBox_IP.Location = new System.Drawing.Point(3, 29);
+            this.textBox_IP.Location = new System.Drawing.Point(3, 21);
+            this.textBox_IP.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.textBox_IP.Name = "textBox_IP";
-            this.textBox_IP.Size = new System.Drawing.Size(200, 34);
+            this.textBox_IP.Size = new System.Drawing.Size(172, 29);
             this.textBox_IP.TabIndex = 1;
             this.textBox_IP.TextChanged += new System.EventHandler(this.TextBox_IP_TextChanged);
             // 
@@ -130,7 +135,7 @@
             this.label_IP.Font = new System.Drawing.Font("宋体", 14F);
             this.label_IP.Location = new System.Drawing.Point(3, 0);
             this.label_IP.Name = "label_IP";
-            this.label_IP.Size = new System.Drawing.Size(28, 26);
+            this.label_IP.Size = new System.Drawing.Size(29, 19);
             this.label_IP.TabIndex = 0;
             this.label_IP.Text = "IP";
             // 
@@ -138,46 +143,37 @@
             // 
             this.tabControl1.Controls.Add(this.tabPage1);
             this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Location = new System.Drawing.Point(12, 12);
+            this.tabControl1.Location = new System.Drawing.Point(10, 8);
+            this.tabControl1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(436, 345);
+            this.tabControl1.Size = new System.Drawing.Size(374, 244);
             this.tabControl1.TabIndex = 6;
             // 
             // tabPage1
             // 
-            this.tabPage1.Controls.Add(this.CheckBox_Override);
             this.tabPage1.Controls.Add(this.log);
             this.tabPage1.Controls.Add(this.flowLayoutPanel3);
             this.tabPage1.Controls.Add(this.flowLayoutPanel2);
             this.tabPage1.Controls.Add(this.panel1);
             this.tabPage1.Font = new System.Drawing.Font("宋体", 10F);
-            this.tabPage1.Location = new System.Drawing.Point(4, 26);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(428, 315);
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage1.Size = new System.Drawing.Size(366, 218);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "系统代理";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
-            // CheckBox_Override
-            // 
-            this.CheckBox_Override.AutoSize = true;
-            this.CheckBox_Override.Location = new System.Drawing.Point(26, 215);
-            this.CheckBox_Override.Name = "CheckBox_Override";
-            this.CheckBox_Override.Size = new System.Drawing.Size(210, 24);
-            this.CheckBox_Override.TabIndex = 8;
-            this.CheckBox_Override.Text = "本地(intranet)地址不使用代理";
-            this.CheckBox_Override.UseVisualStyleBackColor = true;
-            this.CheckBox_Override.CheckedChanged += new System.EventHandler(this.CheckBox1_CheckedChanged);
-            // 
             // log
             // 
             this.log.Font = new System.Drawing.Font("宋体", 12F);
-            this.log.Location = new System.Drawing.Point(6, 90);
+            this.log.Location = new System.Drawing.Point(5, 64);
+            this.log.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.log.Name = "log";
             this.log.ReadOnly = true;
-            this.log.Size = new System.Drawing.Size(415, 110);
+            this.log.Size = new System.Drawing.Size(356, 113);
             this.log.TabIndex = 7;
             this.log.Text = "";
             // 
@@ -185,28 +181,31 @@
             // 
             this.flowLayoutPanel3.Controls.Add(this.label_Port);
             this.flowLayoutPanel3.Controls.Add(this.textBox_Port);
-            this.flowLayoutPanel3.Location = new System.Drawing.Point(215, 6);
+            this.flowLayoutPanel3.Location = new System.Drawing.Point(184, 4);
+            this.flowLayoutPanel3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel3.Name = "flowLayoutPanel3";
-            this.flowLayoutPanel3.Size = new System.Drawing.Size(206, 78);
+            this.flowLayoutPanel3.Size = new System.Drawing.Size(177, 55);
             this.flowLayoutPanel3.TabIndex = 6;
             // 
             // flowLayoutPanel2
             // 
             this.flowLayoutPanel2.Controls.Add(this.label_IP);
             this.flowLayoutPanel2.Controls.Add(this.textBox_IP);
-            this.flowLayoutPanel2.Location = new System.Drawing.Point(6, 6);
+            this.flowLayoutPanel2.Location = new System.Drawing.Point(5, 4);
+            this.flowLayoutPanel2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.flowLayoutPanel2.Name = "flowLayoutPanel2";
-            this.flowLayoutPanel2.Size = new System.Drawing.Size(206, 78);
+            this.flowLayoutPanel2.Size = new System.Drawing.Size(177, 55);
             this.flowLayoutPanel2.TabIndex = 5;
             // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.label_versiom);
             this.tabPage2.Controls.Add(this.linkLabel1);
-            this.tabPage2.Location = new System.Drawing.Point(4, 26);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(428, 315);
+            this.tabPage2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.tabPage2.Size = new System.Drawing.Size(366, 218);
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "关于";
             this.tabPage2.UseVisualStyleBackColor = true;
@@ -215,37 +214,37 @@
             // 
             this.label_versiom.AutoSize = true;
             this.label_versiom.Font = new System.Drawing.Font("宋体", 12F);
-            this.label_versiom.Location = new System.Drawing.Point(22, 36);
+            this.label_versiom.Location = new System.Drawing.Point(19, 25);
             this.label_versiom.Name = "label_versiom";
-            this.label_versiom.Size = new System.Drawing.Size(71, 22);
+            this.label_versiom.Size = new System.Drawing.Size(47, 16);
             this.label_versiom.TabIndex = 1;
-            this.label_versiom.Text = "[version]";
+            this.label_versiom.Text = "1.1.3";
             // 
             // linkLabel1
             // 
             this.linkLabel1.AutoSize = true;
             this.linkLabel1.Font = new System.Drawing.Font("宋体", 12F);
-            this.linkLabel1.Location = new System.Drawing.Point(22, 70);
+            this.linkLabel1.Location = new System.Drawing.Point(19, 49);
             this.linkLabel1.Name = "linkLabel1";
-            this.linkLabel1.Size = new System.Drawing.Size(57, 22);
+            this.linkLabel1.Size = new System.Drawing.Size(55, 16);
             this.linkLabel1.TabIndex = 0;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "Github";
-            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Jump);
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.Github_Release);
             // 
             // MainWindow
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(456, 366);
+            this.ClientSize = new System.Drawing.Size(391, 258);
             this.Controls.Add(this.tabControl1);
-            this.MinimumSize = new System.Drawing.Size(472, 405);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.MinimumSize = new System.Drawing.Size(407, 297);
             this.Name = "MainWindow";
             this.Text = "系统代理设置";
             this.panel1.ResumeLayout(false);
             this.tabControl1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage1.PerformLayout();
             this.flowLayoutPanel3.ResumeLayout(false);
             this.flowLayoutPanel3.PerformLayout();
             this.flowLayoutPanel2.ResumeLayout(false);
@@ -273,7 +272,6 @@
         private System.Windows.Forms.RichTextBox log;
         private System.Windows.Forms.LinkLabel linkLabel1;
         private System.Windows.Forms.Label label_versiom;
-        private System.Windows.Forms.CheckBox CheckBox_Override;
     }
 }
 
