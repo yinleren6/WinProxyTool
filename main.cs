@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Diagnostics;
-using System.Net;
 using System.Text.RegularExpressions;
 using System.Windows.Forms;
 using WinProxyTool.Utils;
@@ -75,14 +74,14 @@ namespace WinProxyTool
             Regex validipregex = new Regex(@"^(([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])\.){3}([0-9]|[1-9][0-9]|1[0-9]{2}|2[0-4][0-9]|25[0-5])$");
             bool ip_valid = (_ip != "" && validipregex.IsMatch(_ip)) ? true : false;
 
-            if (_ip != ""&& ip_valid){}
+            if (_ip != "" && ip_valid) { }
             else
             {
                 log.ForeColor = System.Drawing.Color.Red; log.Text = "IP错误\n" + _ip;
                 return -1;
             }
 
-            if (_port != "" &&   int.TryParse(_port, out _))
+            if (_port != "" && int.TryParse(_port, out _))
             {
                 int m_port = int.Parse(_port);
                 if (m_port > 0 && m_port < 65536)
