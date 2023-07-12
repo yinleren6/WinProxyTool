@@ -4,7 +4,7 @@
 
 ___
 
-()[https://img.shields.io/badge/version-1.2.0-green]
+![Version](https://img.shields.io/badge/version-1.2.0-green)
 
 一个快速设置Windows代理的小工具 
 
